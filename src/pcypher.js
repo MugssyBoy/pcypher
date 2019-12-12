@@ -6,3 +6,12 @@ module.exports = {
     hasher: async password => await pcypher(password),
     comparePassword: async (plainTextPassword, hashedPassword) => await hasher(plainTextPassword) === hashedPassword ? true : false
 };
+
+
+
+
+const { comparePassword } = require('pcypher');
+
+(async() => {
+    let comparison = await comparePassword(plainTextPassword, hashedPassword); //return boolean true or false
+})
