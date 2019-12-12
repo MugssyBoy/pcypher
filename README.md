@@ -2,13 +2,14 @@
 A JS library that helps you encrypt password.
 
 
-# Install via NPM
+## Install via NPM
 ```npm install pcypher```
 
 
-# Usage
+## Usage
 
-## Required to Create an Environment Variable
+
+### Required to Create an Environment Variable
 Create a .env file in the root directory of your project. Add environment-specific variables on new lines in the form of NAME=VALUE. For example:
 
 ```
@@ -18,7 +19,7 @@ SECRET_KEY=InputRandomKeyHere
 KEY_LENGTH=16
 ```
 
-## To hash a password
+### To hash a password
 ```
 const { hasher } = require('pcypher');
 
@@ -28,7 +29,7 @@ const { hasher } = require('pcypher');
 ```
 
 
-## To check a password
+### To check a password
 ```
 const { comparePassword } = require('pcypher');
 
