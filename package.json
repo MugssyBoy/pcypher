@@ -1,0 +1,33 @@
+{
+  "name": "pcypher",
+  "version": "1.0.0",
+  "description": "A JS library that helps you encrypt password",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MugssyBoy/pcypher.git"
+  },
+  "keywords": [
+    "bcrypt",
+    "pcrypt",
+    "password",
+    "encryption",
+    "hash",
+    "hashing",
+    "passwords",
+    "cipher",
+    "decipher"
+  ],
+  "author": "Alexis Michael Rizon <alexismichael2013@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MugssyBoy/pcypher/issues"
+  },
+  "homepage": "https://github.com/MugssyBoy/pcypher#readme",
+  "dependencies": {
+    "ckey": "^1.0.2"
+  }
+}
