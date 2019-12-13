@@ -58,7 +58,7 @@ const { comparePassword } = require('pcypher');
 ### Works also as a Promise
 ```
     const plainTextPassword = 'A password to hash';
-    const password = await hasher(plainTextPassword)
+    const password = hasher(plainTextPassword)
     .then(result => {
         console.log(result) //e8d3......3e60
     })
