@@ -1,6 +1,8 @@
 # pcypher
 A lightweight JS library that helps you encrypt password.
 
+[![Build Status: Linux](https://travis-ci.com/MugssyBoy/pcypher.svg?branch=master)](https://travis-ci.com/MugssyBoy/pcypher)
+
 
 ## Install via NPM
 ```npm install pcypher```
