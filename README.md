@@ -25,7 +25,13 @@ KEY_LENGTH=16
 const { hasher } = require('pcypher');
 
 (async() => {
-    let password = await hasher(plainTextPassword); // return a hash password
+    try {
+        const password = 'A password to hash';
+        const password = await hasher(plainTextPassword); // returns a hash password
+        console.log(password);
+    } catch (error) {
+        console.error(error);
+    }
 })();
 ```
 
@@ -35,7 +41,15 @@ const { hasher } = require('pcypher');
 const { comparePassword } = require('pcypher');
 
 (async() => {
-    let comparison = await comparePassword(plainTextPassword, hashedPassword); //return boolean true or false
+    try {
+        //password from request body
+        const plainTextPassword = req.body.password;
+        
+        //return boolean true or false
+        const comparison = await comparePassword(plainTextPassword, hashedPassword); //hashedPassword is the result of a password query to database
+    } catch (error) {
+        console.error(error);
+    }
 })();
 ```
 
