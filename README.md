@@ -1,5 +1,5 @@
 # pcypher
-A JS library that helps you encrypt password.
+A lightweight JS library that helps you encrypt password.
 
 
 ## Install via NPM
@@ -19,6 +19,7 @@ SECRET_KEY=InputRandomKeyHere
 KEY_LENGTH=16
 ```
 
+
 ### To hash a password
 ```
 const { hasher } = require('pcypher');
@@ -37,6 +38,7 @@ const { comparePassword } = require('pcypher');
     let comparison = await comparePassword(plainTextPassword, hashedPassword); //return boolean true or false
 })();
 ```
+
 
 
 ### Authors
