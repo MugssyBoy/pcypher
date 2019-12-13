@@ -1,10 +1,10 @@
 {
   "name": "pcypher",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A JS library that helps you encrypt password",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/MugssyBoy/pcypher#readme",
   "dependencies": {
-    "ckey": "^1.0.2"
+    "ckey": "^1.0.2",
+    "mocha": "^6.2.2"
   }
 }
