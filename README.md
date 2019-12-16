@@ -23,7 +23,8 @@ KEY_LENGTH=16
 
 
 ### To hash a password
-```
+
+```js
 const { hasher } = require('pcypher');
 
 (async() => {
@@ -39,7 +40,7 @@ const { hasher } = require('pcypher');
 
 
 ### To check a password
-```
+```js
 const { comparePassword } = require('pcypher');
 
 (async() => {
@@ -56,10 +57,13 @@ const { comparePassword } = require('pcypher');
 ```
 
 ### Works also as a Promise
-```
+```js
+    const { comparePassword } = require('pcypher');
     const plainTextPassword = 'A password to hash';
+
     const password = hasher(plainTextPassword)
-    .then(result => {
+    
+    password.then(result => {
         console.log(result) //e8d3......3e60
     })
 ```
