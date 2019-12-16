@@ -58,12 +58,13 @@ const { comparePassword } = require('pcypher');
 
 ### Works also as a Promise
 ```js
-    const { comparePassword } = require('pcypher');
-    const plainTextPassword = 'A password to hash';
+const { comparePassword } = require('pcypher');
 
-    const password = hasher(plainTextPassword)
+const plainTextPassword = 'A password to hash';
+const password = hasher(plainTextPassword)
     
-    password.then(result => {
+password
+    .then(result => {
         console.log(result) //e8d3......3e60
     })
 ```
