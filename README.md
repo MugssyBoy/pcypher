@@ -50,9 +50,9 @@ const { comparePassword } = require('pcypher');
     try {
         //password from request body
         const plainTextPassword = req.body.password;
-        
         //return boolean true or false
-        const comparison = await comparePassword(plainTextPassword, hashedPassword); //hashedPassword is the result of a password query to database
+        const comparison = await comparePassword(plainTextPassword, hashedPassword);
+        //hashedPassword: a password loaded from database
     } catch (error) {
         console.error(error);
     }
