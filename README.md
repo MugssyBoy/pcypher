@@ -1,7 +1,8 @@
 # pcypher
 A lightweight JS library that helps you encrypt password.
 
-[![NPM](https://nodei.co/npm/pcypher.png)](https://www.npmjs.com/package/pcypher) [![Github issues](https://img.shields.io/github/issues/MugssyBoy/pcypher.svg)](https://github.com/MugssyBoy/pcypher/issues) [![Build Status: Linux](https://travis-ci.com/MugssyBoy/pcypher.svg?branch=master)](https://travis-ci.com/MugssyBoy/pcypher) [![npm](https://img.shields.io/npm/v/pcypher.svg)](https://www.npmjs.com/package/pcypher) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE-MIT)
+[![NPM](https://nodei.co/npm/pcypher.png)](https://www.npmjs.com/package/pcypher)
+[![Github issues](https://img.shields.io/github/issues/MugssyBoy/pcypher.svg)](https://github.com/MugssyBoy/pcypher/issues) [![Build Status: Linux](https://travis-ci.com/MugssyBoy/pcypher.svg?branch=master)](https://travis-ci.com/MugssyBoy/pcypher) [![npm](https://img.shields.io/npm/v/pcypher.svg)](https://www.npmjs.com/package/pcypher) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE-MIT)
 
 
 ## Install via NPM
