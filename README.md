@@ -32,8 +32,9 @@ const { hasher } = require('pcypher');
 (async() => {
     try {
         const plainTextPassword = 'A password to hash';
-        const password = await hasher(plainTextPassword); // returns a hash password e8d3......3e60
-        console.log(password);
+        // returns a hash password
+        const password = await hasher(plainTextPassword);
+        console.log(password); //e8d3......3e60
     } catch (error) {
         console.error(error);
     }
@@ -63,7 +64,7 @@ const { comparePassword } = require('pcypher');
 const { comparePassword } = require('pcypher');
 
 const plainTextPassword = 'A password to hash';
-const password = hasher(plainTextPassword)
+const password = hasher(plainTextPassword);
     
 password
     .then(result => {
