@@ -1,6 +1,6 @@
 {
   "name": "pcypher",
-  "version": "1.2.9",
+  "version": "1.3.0",
   "description": "A JS library that helps you encrypt password",
   "main": "index.js",
   "scripts": {
