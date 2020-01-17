@@ -23,7 +23,6 @@ SECRET_KEY=InputRandomKeyHere
 KEY_LENGTH=16
 ```
 
-
 ### To hash a password
 
 ```js
@@ -40,7 +39,6 @@ const { hasher } = require('pcypher');
     }
 })();
 ```
-
 
 ### To check a password
 ```js
@@ -59,7 +57,7 @@ const { comparePassword } = require('pcypher');
 })();
 ```
 
-### Works also as a Promise
+### Work also as a Promise
 ```js
 const { comparePassword } = require('pcypher');
 
@@ -68,10 +66,24 @@ const password = hasher(plainTextPassword);
     
 password
     .then(result => {
-        console.log(result) //e8d3......3e60
+        console.log(result) // e8d3......3e60
     })
 ```
 
+### Token Generator
+Generate a token when someone requests for a password reset.
+
+```js
+const { generateToken } = require('pcypher');
+
+app.post('/password-reset', function(req, res, next) {
+    const token = await generateToken();
+    console.log(token); // e8d3......3e60
+    
+    //...some code
+
+});
+```
 
 ### Authors
 - 🐰 [Alex](https://github.com/MugssyBoy)

@@ -5,3 +5,8 @@ const encrypt = password => new Promise((resolve, reject) => crypto.scrypt(passw
 
 exports.hasher =  async password => await encrypt(password);
 exports.comparePassword = async (plainTextPassword, hashedPassword) => await hasher(plainTextPassword) === hashedPassword ? true : false;
+exports.generateToken = async () => {
+    let buf = await crypto.randomBytes(parseInt(key.KEY_LENGTH));
+    let token = buf.toString('hex');
+    return token;
+};
