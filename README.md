@@ -85,9 +85,13 @@ app.post('/password-reset', function(req, res, next) {
 });
 ```
 
+### Contribute
+We are at the very early stage of this repository. Any help and contribution is welcome.
+* Please Feel free to submit pull request.
+
+
 ### Authors
 - 🐰 [Alex](https://github.com/MugssyBoy)
-
 
 
 ### License
